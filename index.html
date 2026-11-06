@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="Taksi durağımızla tek dokunuşla iletişime geçin. Telefon, WhatsApp ve durak konumu." />
+    <title>Taksi Durağı | İletişim ve Konum</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#anasayfa">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#anasayfa" aria-label="Ana sayfaya dön">
+          <span class="brand-symbol" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="m5 15 1.5-5.5A2 2 0 0 1 8.4 8h7.2a2 2 0 0 1 1.9 1.5L19 15M5 15h14v3H5v-3Zm2 3v2m10-2v2M7 12h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-text"><strong data-business-name>TAKSİ DURAĞI</strong><small>Güvenilir ulaşım, kolay iletişim</small></span>
+        </a>
+
+        <nav class="nav" aria-label="Ana menü">
+          <a href="#anasayfa">Ana Sayfa</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+        <a href="#iletisim" class="header-cta">İletişime Geç <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="anasayfa" class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> YOLCULUĞUNUZ BURADA BAŞLAR</span>
+            <h1 id="hero-title">Gideceğiniz yere <span>bir telefon</span> kadar yakın.</h1>
+            <p class="hero-description">Taksi ihtiyacınız olduğunda bize kolayca ulaşın. Telefonla arayın, WhatsApp'tan yazın veya durak konumumuzu görüntüleyin.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" data-action="call" href="#iletisim">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 6.2 2 2 0 0 1 5.5 4h3a2 2 0 0 1 2 1.7c.13.9.36 1.8.68 2.65a2 2 0 0 1-.45 2.1L9.5 11.7a14 14 0 0 0 2.8 2.8l1.25-1.23a2 2 0 0 1 2.1-.45c.85.32 1.75.55 2.65.68A2 2 0 0 1 21 16.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Hemen Ara
+              </a>
+              <a class="btn btn-outline" data-action="whatsapp" href="#iletisim" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.35-4.45a8.5 8.5 0 1 1 15.65-4.35Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.9c.5 2.8 2.3 4.5 5.1 5.1l1.1-1.2 1.5.8-.5 1.7c-3.7 1.4-7.4-2.2-8-5.7L9 8.9Z" fill="currentColor"/></svg>
+                WhatsApp
+              </a>
+            </div>
+            <div class="hero-footnote"><span class="footnote-line"></span> Kolay iletişim · Hızlı yönlendirme</div>
+          </div>
+
+          <div class="hero-art" aria-label="Sarı taksi illüstrasyonu" role="img">
+            <div class="art-halo"></div>
+            <div class="art-orbit art-orbit-a"></div>
+            <div class="art-orbit art-orbit-b"></div>
+            <div class="floating-chip chip-top"><span class="chip-icon">↗</span><span><strong>Yola çıkmaya hazır</strong><small>Tek dokunuşla iletişim</small></span></div>
+            <svg class="taxi-illustration" viewBox="0 0 730 410" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="taxiBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE46A"/><stop offset=".62" stop-color="#FFCC29"/><stop offset="1" stop-color="#EBA900"/></linearGradient>
+                <linearGradient id="taxiGlass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#41515E"/><stop offset="1" stop-color="#19262E"/></linearGradient>
+                <linearGradient id="roadShadow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#000" stop-opacity="0"/><stop offset=".5" stop-color="#000" stop-opacity=".4"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+              </defs>
+              <ellipse cx="366" cy="342" rx="300" ry="32" fill="url(#roadShadow)"/>
+              <path d="M116 202c11-17 33-29 60-32l47-7 56-73c11-15 29-25 49-25h155c29 0 49 13 65 36l41 64 44 12c26 7 42 27 42 55v73c0 13-11 24-24 24H118c-17 0-31-14-31-31v-61c0-16 11-29 29-35Z" fill="url(#taxiBody)" stroke="#DE9900" stroke-width="5"/>
+              <path d="m266 160 55-71c6-9 16-13 28-13h128c21 0 33 8 44 24l38 60H266Z" fill="url(#taxiGlass)" stroke="#ECA900" stroke-width="8"/>
+              <path d="M421 77v83" stroke="#F6BA22" stroke-width="9"/>
+              <path d="M345 84h53l-45 76h-64l56-76Z" fill="#8DB4C5" opacity=".20"/>
+              <path d="M473 85h18c6 0 16 9 20 16l31 50h-36l-33-66Z" fill="#95BDCD" opacity=".14"/>
+              <path d="M314 65V47c0-7 6-13 13-13h107c7 0 13 6 13 13v18" fill="#1D2226"/>
+              <rect x="335" y="28" width="92" height="33" rx="8" fill="#FFD53E"/>
+              <text x="381" y="50" text-anchor="middle" fill="#171717" font-size="19" font-family="Arial,sans-serif" font-weight="900" letter-spacing="2">TAKSİ</text>
+              <path d="M97 230h566" stroke="#F9E17C" stroke-width="4" opacity=".8"/>
+              <path d="M94 269h574" stroke="#C48A00" stroke-width="3" opacity=".7"/>
+              <path d="M179 284h338" stroke="#B97B08" stroke-width="4" opacity=".45"/>
+              <path d="M404 175v144" stroke="#DA9708" stroke-width="4"/>
+              <rect x="424" y="189" width="44" height="8" rx="4" fill="#AC7800"/>
+              <path d="M141 207H98l-10 22h65Z" fill="#151B20"/>
+              <path d="M629 196h23c18 7 24 17 26 30h-48Z" fill="#FFF3BD"/>
+              <path d="M90 252h47v24H90Z" fill="#24292C"/>
+              <rect x="311" y="233" width="28" height="17" fill="#212529"/>
+              <rect x="340" y="233" width="28" height="17" fill="#FFE66C"/>
+              <rect x="369" y="233" width="28" height="17" fill="#212529"/>
+              <rect x="398" y="233" width="28" height="17" fill="#FFE66C"/>
+              <rect x="311" y="251" width="28" height="17" fill="#FFE66C"/>
+              <rect x="340" y="251" width="28" height="17" fill="#212529"/>
+              <rect x="369" y="251" width="28" height="17" fill="#FFE66C"/>
+              <rect x="398" y="251" width="28" height="17" fill="#212529"/>
+              <g><circle cx="216" cy="312" r="64" fill="#0D0F11"/><circle cx="216" cy="312" r="43" fill="#333A40" stroke="#727980" stroke-width="7"/><circle cx="216" cy="312" r="18" fill="#9BA0A4"/><path d="M216 269v25M216 330v25M173 312h25M234 312h25" stroke="#A8AEB2" stroke-width="8" stroke-linecap="round"/></g>
+              <g><circle cx="567" cy="312" r="64" fill="#0D0F11"/><circle cx="567" cy="312" r="43" fill="#333A40" stroke="#727980" stroke-width="7"/><circle cx="567" cy="312" r="18" fill="#9BA0A4"/><path d="M567 269v25M567 330v25M524 312h25M585 312h25" stroke="#A8AEB2" stroke-width="8" stroke-linecap="round"/></g>
+            </svg>
+            <div class="floating-chip chip-bottom"><span class="location-symbol" aria-hidden="true">⌖</span><span><strong>Durak konumu</strong><small>Haritada görüntüle</small></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Kısa bilgiler">
+        <div class="container quick-strip-inner">
+          <span><span class="check-symbol">✓</span> Kolay telefon bağlantısı</span>
+          <span><span class="check-symbol">✓</span> WhatsApp üzerinden iletişim</span>
+          <span><span class="check-symbol">✓</span> Durak adresine yol tarifi</span>
+        </div>
+      </section>
+
+      <section id="hakkimizda" class="intro section-pad">
+        <div class="container intro-layout">
+          <div>
+            <div class="section-kicker">HAKKIMIZDA <span></span></div>
+            <h2>Ulaşımınız için <span>buradayız.</span></h2>
+          </div>
+          <div class="intro-copy">
+            <p><strong data-business-name>Taksi Durağı</strong> ile iletişim kurmak artık çok kolay. Bize telefon veya WhatsApp aracılığıyla ulaşabilir, durak adresimizi haritada açabilirsiniz.</p>
+            <a class="inline-link" href="#iletisim">İletişim bilgilerini görüntüle <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim" class="contact section-pad" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">İLETİŞİM <span></span></div>
+              <h2 id="contact-title">Bize <span>ulaşın.</span></h2>
+            </div>
+            <p>İhtiyacınız olan tüm iletişim bilgileri tek yerde.</p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="info-card">
+              <div class="card-header"><span class="number">01 / ŞOFÖR</span><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20v-2.2c0-3.2 2.6-5.8 5.8-5.8h2.4c3.2 0 5.8 2.6 5.8 5.8V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div>
+              <span class="card-label">Ad Soyad</span>
+              <h3 data-driver-name>Ad Soyad</h3>
+              <p>Sizinle iletişime geçebileceğiniz taksi şoförü.</p>
+            </article>
+
+            <article class="info-card featured-card">
+              <div class="card-header"><span class="number">02 / TELEFON</span><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 6.2 2 2 0 0 1 5.5 4h3a2 2 0 0 1 2 1.7c.13.9.36 1.8.68 2.65a2 2 0 0 1-.45 2.1L9.5 11.7a14 14 0 0 0 2.8 2.8l1.25-1.23a2 2 0 0 1 2.1-.45c.85.32 1.75.55 2.65.68A2 2 0 0 1 21 16.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+              <span class="card-label">Telefon numarası</span>
+              <h3 data-phone-display>Numara eklenecek</h3>
+              <a class="card-action" href="#iletisim" data-action="call">Telefonla Ara <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="info-card">
+              <div class="card-header"><span class="number">03 / ADRES</span><span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span></div>
+              <span class="card-label">Durak adresi</span>
+              <h3 class="address-text" data-address-display>Adres eklenecek</h3>
+              <a class="card-action" href="#iletisim" data-action="maps" target="_blank" rel="noopener noreferrer">Yol Tarifi Al <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+
+          <div class="bottom-banner">
+            <div><span class="banner-icon">↗</span><span><strong>Bir mesaj uzağınızdayız.</strong><small>WhatsApp üzerinden doğrudan iletişime geçebilirsiniz.</small></span></div>
+            <a class="btn btn-primary" href="#iletisim" data-action="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp'tan Yaz <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand"><span class="footer-dot"></span><strong data-business-name>Taksi Durağı</strong></div>
+        <span>© <span id="year">2026</span> Tüm hakları saklıdır.</span>
+        <a href="#anasayfa">Yukarı Dön ↑</a>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
